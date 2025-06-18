@@ -24,3 +24,6 @@ app.use('/api/student', studentRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+const uploadRoutes = require('./routes/upload');
+app.use('/api', uploadRoutes);

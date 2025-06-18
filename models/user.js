@@ -24,11 +24,16 @@ const User = sequelize.define('User', {
     type: DataTypes.ENUM('admin', 'student'),
     allowNull: false,
     validate: {
-      isIn: {
-        args: [['admin', 'student']],
-        msg: 'Role must be either admin or student',
-      },
+      isIn: [['admin', 'student']],
     },
+  },
+  profileImage: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  profileImageEtag: {
+    type: DataTypes.STRING,
+    allowNull: true,
   },
 });
 
