@@ -38,3 +38,4 @@ Marks - Table - (id, subject_id, mark, user_id) - subject_id and user_id must be
 1. /login - username, password - token 
 2. /getMarks - [{subject_name: , marks: }] - token          
 3. /myProfile - {name: , email:, dob: }                 
+
